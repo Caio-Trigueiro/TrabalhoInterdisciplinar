@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marmitex da Jô</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="img/Marmitex da Jô.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <header>
+        <ul>
+            <li><img src="img/Marmitex da Jô.png" alt=""></li>
+
+            <li><div class="pesq">
+                <img src="img/lupa.png" alt="">
+                <input type="text" placeholder="Pesquisar...">
+                <button class="btn btn-list">
+                <select id="list" name="list">
+                    <option value="item1">Todos</option>
+                    <option value="item2">Bebidas</option>
+                    <option value="item3">Sobremesas</option>
+                  </select>
+                </button>
+            </div>
+            
+        </li>
+        <div class="buttons">
+            <button class="btn btn-carrinho"><img src="img/carrinho.png" alt=""><a href="carrinho.html">Carrinho</a></button>
+            <button class="btn btn-entrar"><a href="login.html">Entrar</a></button>
+            <button class="btn btn-log"><a href="login.html">Fazer Login</a></button>
+            </div>
+        </ul>
+    </header>
+
+    <section class="vitrine">
+    <div class="caixa-produto" id="card-produto">
+    <img src="img/PDD/CC.png" alt="Combo Churrasco">
+  <div class="caixa-texts">
+    <div class="caixa-title">Combo Churrasco</div>
+    <p>Bife de boi, linguiça na chapa, arroz soltinho, batate frita crocante, farofa especial, banana frita.</p>
+    <span class="caixa-preços">R$ 30,00</span>
+  </div>
+  </div>
+
+  <div id="modal-produto" class="modal-overlay">
+  <div class="modal-produto-card">
+    <span class="fechar-modal-prod">&times;</span>
+    
+    <div class="modal-produto-imagem">
+      <img src="img/PDD/CC.png" alt="Combo Churrasco" id="modal-img">
+    </div>
+
+    <div class="modal-produto-info">
+      <h2 id="modal-titulo">Combo Churrasco</h2>
+      <p id="modal-descricao">
+        Bife de boi, linguiça na chapa, arroz soltinho, batata frita crocante, farofa especial, banana frita.
+      </p>
+      <div class="opcoes-tamanho">
+  <label>Tamanhos:</label>
+  <div class="botoes-tamanho">
+    <button type="button" class="btn-tamanho ativo" data-preco="30.00">P</button>
+    <button type="button" class="btn-tamanho" data-preco="35.00">M</button>
+    <button type="button" class="btn-tamanho" data-preco="45.00">G</button>
+  </div>
+</div>
+ <div class="controle-quantidade">
+  <div class="quant">Quantidade</div>
+    <button type="button" class="btn-qtd" id="btn-menos">-</button>
+    <span id="qtd-numero">1</span>
+    <button type="button" class="btn-qtd" id="btn-mais">+</button>
+  </div>
+      <div class="modal-produto-footer">
+        <span class="modal-preco" id="modal-preco">R$ 30,00</span>
+<button class="btn btn-add">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Croca-Frango-->
+
+<div class="caixa-produto" id="card-produto">
+    <img src="img/PDD/MCF.png" alt="Croca-Frango">
+  <div class="caixa-texts">
+    <div class="caixa-title">Croca-Frango</div>
+    <p>Filé de frango empanado super crocante, arroz soltinho, feijão caseiro bem temperado, batata frita sequinha.</p>
+    <span class="caixa-preços">R$ 25,00</span>
+  </div>
+  </div>
+
+  <div id="modal-produto" class="modal-overlay">
+  <div class="modal-produto-card">
+    <span class="fechar-modal-prod">&times;</span>
+    
+    <div class="modal-produto-imagem">
+      <img src="img/PDD/MCF.png" alt="Croca-Frango" id="modal-img">
+    </div>
+
+    <div class="modal-produto-info">
+      <h2 id="modal-titulo">Croca-Frango</h2>
+      <p id="modal-descricao">
+        Filé de frango empanado super crocante, arroz soltinho, feijão caseiro bem temperado, batata frita sequinha.
+      </p>
+      <div class="opcoes-tamanho">
+  <label>Tamanhos:</label>
+  <div class="botoes-tamanho">
+    <button type="button" class="btn-tamanho ativo" data-preco="25.00">P</button>
+    <button type="button" class="btn-tamanho" data-preco="30.00">M</button>
+    <button type="button" class="btn-tamanho" data-preco="35.00">G</button>
+  </div>
+</div>
+ <div class="controle-quantidade">
+  <div class="quant">Quantidade</div>
+    <button type="button" class="btn-qtd" id="btn-menos">-</button>
+    <span id="qtd-numero">1</span>
+    <button type="button" class="btn-qtd" id="btn-mais">+</button>
+  </div>
+      <div class="modal-produto-footer">
+        <span class="modal-preco" id="modal-preco">R$ 25,00</span>
+<button class="btn btn-add">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Macarronada-->
+
+<div class="caixa-produto" id="card-produto">
+    <img src="img/PDD/MA.png" alt="Macarronada">
+  <div class="caixa-texts">
+    <div class="caixa-title">Macarronada</div>
+    <p>Macarrão talharim ao molho branco cremoso, frango desfiado, cubinhos de bacon, milho, queijo derretido e cebolinha.</p>
+    <span class="caixa-preços">R$ 15,50</span>
+  </div>
+  </div>
+
+  <div id="modal-produto" class="modal-overlay">
+  <div class="modal-produto-card">
+    <span class="fechar-modal-prod">&times;</span>
+    
+    <div class="modal-produto-imagem">
+      <img src="img/PDD/MA.png" alt="Macarronada" id="modal-img">
+    </div>
+
+    <div class="modal-produto-info">
+      <h2 id="modal-titulo">Macarronada</h2>
+      <p id="modal-descricao">
+        Macarrão talharim ao molho branco cremoso, frango desfiado, cubinhos de bacon, milho, queijo derretido e cebolinha.
+      </p>
+      <div class="opcoes-tamanho">
+  <label>Tamanhos:</label>
+  <div class="botoes-tamanho">
+    <button type="button" class="btn-tamanho ativo" data-preco="15.50">P</button>
+    <button type="button" class="btn-tamanho" data-preco="25.50">M</button>
+    <button type="button" class="btn-tamanho" data-preco="30.50">G</button>
+  </div>
+</div>
+ <div class="controle-quantidade">
+  <div class="quant">Quantidade</div>
+    <button type="button" class="btn-qtd" id="btn-menos">-</button>
+    <span id="qtd-numero">1</span>
+    <button type="button" class="btn-qtd" id="btn-mais">+</button>
+  </div>
+      <div class="modal-produto-footer">
+        <span class="modal-preco" id="modal-preco">R$ 15,50</span>
+<button class="btn btn-add">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Strogonoff-->
+
+<div class="caixa-produto" id="card-produto">
+    <img src="img/PDD/SG.png" alt="Strogonoff">
+  <div class="caixa-texts">
+    <div class="caixa-title">Strogonoff</div>
+    <p>Cubos de frango ao molho cremoso de strogonoff, arroz branco soltinho, batata palha bem crocante.</p>
+    <span class="caixa-preços">R$ 17,00</span>
+  </div>
+  </div>
+
+  <div id="modal-produto" class="modal-overlay">
+  <div class="modal-produto-card">
+    <span class="fechar-modal-prod">&times;</span>
+    
+    <div class="modal-produto-imagem">
+      <img src="img/PDD/SG.png" alt="Strogonoff" id="modal-img">
+    </div>
+
+    <div class="modal-produto-info">
+      <h2 id="modal-titulo">Strogonoff</h2>
+      <p id="modal-descricao">
+        Cubos de frango ao molho cremoso de strogonoff, arroz branco soltinho, batata palha bem crocante.
+      </p>
+      <div class="opcoes-tamanho">
+  <label>Tamanhos:</label>
+  <div class="botoes-tamanho">
+    <button type="button" class="btn-tamanho ativo" data-preco="17.00">P</button>
+    <button type="button" class="btn-tamanho" data-preco="22.00">M</button>
+    <button type="button" class="btn-tamanho" data-preco="25.00">G</button>
+  </div>
+</div>
+ <div class="controle-quantidade">
+  <div class="quant">Quantidade</div>
+    <button type="button" class="btn-qtd" id="btn-menos">-</button>
+    <span id="qtd-numero">1</span>
+    <button type="button" class="btn-qtd" id="btn-mais">+</button>
+  </div>
+      <div class="modal-produto-footer">
+        <span class="modal-preco" id="modal-preco">R$ 17,00</span>
+<button class="btn btn-add">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Prato Feito-->
+
+<div class="caixa-produto" id="card-produto">
+    <img src="img/PDD/PF.png" alt="Prato Feito">
+  <div class="caixa-texts">
+    <div class="caixa-title">Prato Feito</div>
+    <p>Tiras de carne grelhada, linguiça em rodelas, arroz soltinho, feijão caseiro, farofa temperada, cenoura cozida e tomate fresco.</p>
+    <span class="caixa-preços">R$ 20,00</span>
+  </div>
+  </div>
+
+  <div id="modal-produto" class="modal-overlay">
+  <div class="modal-produto-card">
+    <span class="fechar-modal-prod">&times;</span>
+    
+    <div class="modal-produto-imagem">
+      <img src="img/PDD/PF.png" alt="Prato Feito" id="modal-img">
+    </div>
+
+    <div class="modal-produto-info">
+      <h2 id="modal-titulo">Prato Feito</h2>
+      <p id="modal-descricao">
+        Tiras de carne grelhada, linguiça em rodelas, arroz soltinho, feijão caseiro, farofa temperada, cenoura cozida e tomate fresco.
+      </p>
+      <div class="opcoes-tamanho">
+  <label>Tamanhos:</label>
+  <div class="botoes-tamanho">
+    <button type="button" class="btn-tamanho ativo" data-preco="20.00">P</button>
+    <button type="button" class="btn-tamanho" data-preco="25.00">M</button>
+    <button type="button" class="btn-tamanho" data-preco="30.00">G</button>
+  </div>
+</div>
+ <div class="controle-quantidade">
+  <div class="quant">Quantidade</div>
+    <button type="button" class="btn-qtd" id="btn-menos">-</button>
+    <span id="qtd-numero">1</span>
+    <button type="button" class="btn-qtd" id="btn-mais">+</button>
+  </div>
+      <div class="modal-produto-footer">
+        <span class="modal-preco" id="modal-preco">R$ 20,00</span>
+<button class="btn btn-add">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Feijoada-->
+
+<div class="caixa-produto" id="card-produto">
+    <img src="img/PDD/FJ.png" alt="Feijoada">
+  <div class="caixa-texts">
+    <div class="caixa-title">Feijoada</div>
+    <p>Feijoada completa com carnes selecionadas e calabresa, arroz branco soltinho, couve refogada, torresmo crocante e fatia de laranja.</p>
+    <span class="caixa-preços">R$ 25,00</span>
+  </div>
+  </div>
+
+  <div id="modal-produto" class="modal-overlay">
+  <div class="modal-produto-card">
+    <span class="fechar-modal-prod">&times;</span>
+    
+    <div class="modal-produto-imagem">
+      <img src="img/PDD/FJ.png" alt="Feijoada" id="modal-img">
+    </div>
+
+    <div class="modal-produto-info">
+      <h2 id="modal-titulo">Feijoada</h2>
+      <p id="modal-descricao">
+        Feijoada completa com carnes selecionadas e calabresa, arroz branco soltinho, couve refogada, torresmo crocante e fatia de laranja.
+      </p>
+      <div class="opcoes-tamanho">
+  <label>Tamanhos:</label>
+  <div class="botoes-tamanho">
+    <button type="button" class="btn-tamanho ativo" data-preco="25.00">P</button>
+    <button type="button" class="btn-tamanho" data-preco="33.00">M</button>
+    <button type="button" class="btn-tamanho" data-preco="40.00">G</button>
+  </div>
+</div>
+ <div class="controle-quantidade">
+  <div class="quant">Quantidade</div>
+    <button type="button" class="btn-qtd" id="btn-menos">-</button>
+    <span id="qtd-numero">1</span>
+    <button type="button" class="btn-qtd" id="btn-mais">+</button>
+  </div>
+      <div class="modal-produto-footer">
+        <span class="modal-preco" id="modal-preco">R$ 25,00</span>
+<button class="btn btn-add">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Galinhada-->
+
+<div class="caixa-produto" id="card-produto">
+    <img src="img/PDD/GL.png" alt="Galinhada">
+  <div class="caixa-texts">
+    <div class="caixa-title">Galinhada</div>
+    <p>Arroz temperado soltinho com pedaços suculentos de frango, cenoura, cheiro-verde fresco e pimenta biquinho.</p>
+    <span class="caixa-preços">R$ 16,00</span>
+  </div>
+  </div>
+
+  <div id="modal-produto" class="modal-overlay">
+  <div class="modal-produto-card">
+    <span class="fechar-modal-prod">&times;</span>
+    
+    <div class="modal-produto-imagem">
+      <img src="img/PDD/GL.png" alt="Galinhada" id="modal-img">
+    </div>
+
+    <div class="modal-produto-info">
+      <h2 id="modal-titulo">Galinhada</h2>
+      <p id="modal-descricao">
+       Arroz temperado soltinho com pedaços suculentos de frango, cenoura, cheiro-verde fresco e pimenta biquinho.
+      </p>
+      <div class="opcoes-tamanho">
+  <label>Tamanhos:</label>
+  <div class="botoes-tamanho">
+    <button type="button" class="btn-tamanho ativo" data-preco="16.00">P</button>
+    <button type="button" class="btn-tamanho" data-preco="21.00">M</button>
+    <button type="button" class="btn-tamanho" data-preco="25.00">G</button>
+  </div>
+</div>
+ <div class="controle-quantidade">
+  <div class="quant">Quantidade</div>
+    <button type="button" class="btn-qtd" id="btn-menos">-</button>
+    <span id="qtd-numero">1</span>
+    <button type="button" class="btn-qtd" id="btn-mais">+</button>
+  </div>
+      <div class="modal-produto-footer">
+        <span class="modal-preco" id="modal-preco">R$ 16,00</span>
+<button class="btn btn-add">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Escondidinho-->
+
+<div class="caixa-produto" id="card-produto">
+    <img src="img/PDD/ES.png" alt="Escondidinho">
+  <div class="caixa-texts">
+    <div class="caixa-title">Escondidinho</div>
+    <p>Purê cremoso de mandioca, recheio suculento de carne desfiada temperada, cobertura generosa de queijo gratinado.</p>
+    <span class="caixa-preços">R$ 18,00</span>
+  </div>
+  </div>
+
+  <div id="modal-produto" class="modal-overlay">
+  <div class="modal-produto-card">
+    <span class="fechar-modal-prod">&times;</span>
+    
+    <div class="modal-produto-imagem">
+      <img src="img/PDD/ES.png" alt="Escondidinho" id="modal-img">
+    </div>
+
+    <div class="modal-produto-info">
+      <h2 id="modal-titulo">Escondidinho</h2>
+      <p id="modal-descricao">
+        Purê cremoso de mandioca, recheio suculento de carne desfiada temperada, cobertura generosa de queijo gratinado.
+      </p>
+      <div class="opcoes-tamanho">
+  <label>Tamanhos:</label>
+  <div class="botoes-tamanho">
+    <button type="button" class="btn-tamanho ativo" data-preco="18.00">P</button>
+    <button type="button" class="btn-tamanho" data-preco="23.00">M</button>
+    <button type="button" class="btn-tamanho" data-preco="27.00">G</button>
+  </div>
+</div>
+ <div class="controle-quantidade">
+  <div class="quant">Quantidade</div>
+    <button type="button" class="btn-qtd" id="btn-menos">-</button>
+    <span id="qtd-numero">1</span>
+    <button type="button" class="btn-qtd" id="btn-mais">+</button>
+  </div>
+      <div class="modal-produto-footer">
+        <span class="modal-preco" id="modal-preco">R$ 18,00</span>
+<button class="btn btn-add">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Lasanha-->
+
+<div class="caixa-produto" id="card-produto">
+    <img src="img/PDD/LZ.png" alt="Lasanha">
+  <div class="caixa-texts">
+    <div class="caixa-title">Lasanha</div>
+    <p>Lasanha à bolonhesa suculenta com queijo gratinado, arroz branco soltinho e batata frita crocante.</p>
+    <span class="caixa-preços">R$ 24,00</span>
+  </div>
+  </div>
+
+  <div id="modal-produto" class="modal-overlay">
+  <div class="modal-produto-card">
+    <span class="fechar-modal-prod">&times;</span>
+    
+    <div class="modal-produto-imagem">
+      <img src="img/PDD/LZ.png" alt="Lasanha" id="modal-img">
+    </div>
+
+    <div class="modal-produto-info">
+      <h2 id="modal-titulo">Lasanha</h2>
+      <p id="modal-descricao">
+        Lasanha à bolonhesa suculenta com queijo gratinado, arroz branco soltinho e batata frita crocante.
+      </p>
+      <div class="opcoes-tamanho">
+  <label>Tamanhos:</label>
+  <div class="botoes-tamanho">
+    <button type="button" class="btn-tamanho ativo" data-preco="24.00">P</button>
+    <button type="button" class="btn-tamanho" data-preco="29.00">M</button>
+    <button type="button" class="btn-tamanho" data-preco="36.00">G</button>
+  </div>
+</div>
+ <div class="controle-quantidade">
+  <div class="quant">Quantidade</div>
+    <button type="button" class="btn-qtd" id="btn-menos">-</button>
+    <span id="qtd-numero">1</span>
+    <button type="button" class="btn-qtd" id="btn-mais">+</button>
+  </div>
+      <div class="modal-produto-footer">
+        <span class="modal-preco" id="modal-preco">R$ 24,00</span>
+<button class="btn btn-add">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Bife à Parmegiana-->
+
+<div class="caixa-produto" id="card-produto">
+    <img src="img/PDD/BP.png" alt="Bife à Parmegiana">
+  <div class="caixa-texts">
+    <div class="caixa-title">Bife à Parmegiana</div>
+    <p>Bife empanado suculento ao molho de tomate caseiro com queijo derretido e orégano, arroz branco soltinho e batata frita crocante.</p>
+    <span class="caixa-preços">R$ 26,00</span>
+  </div>
+  </div>
+
+  <div id="modal-produto" class="modal-overlay">
+  <div class="modal-produto-card">
+    <span class="fechar-modal-prod">&times;</span>
+    
+    <div class="modal-produto-imagem">
+      <img src="img/PDD/BP.png" alt="Bife à Parmegiana" id="modal-img">
+    </div>
+
+    <div class="modal-produto-info">
+      <h2 id="modal-titulo">Bife à Parmegiana</h2>
+      <p id="modal-descricao">
+        Bife empanado suculento ao molho de tomate caseiro com queijo derretido e orégano, arroz branco soltinho e batata frita crocante.
+      </p>
+      <div class="opcoes-tamanho">
+  <label>Tamanhos:</label>
+  <div class="botoes-tamanho">
+    <button type="button" class="btn-tamanho ativo" data-preco="26.00">P</button>
+    <button type="button" class="btn-tamanho" data-preco="32.00">M</button>
+    <button type="button" class="btn-tamanho" data-preco="42.00">G</button>
+  </div>
+</div>
+ <div class="controle-quantidade">
+  <div class="quant">Quantidade</div>
+    <button type="button" class="btn-qtd" id="btn-menos">-</button>
+    <span id="qtd-numero">1</span>
+    <button type="button" class="btn-qtd" id="btn-mais">+</button>
+  </div>
+      <div class="modal-produto-footer">
+        <span class="modal-preco" id="modal-preco">R$ 26,00</span>
+<button class="btn btn-add">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Filé de Tilápia-->    
+  
+ <div class="caixa-produto" id="card-produto">
+    <img src="img/PDD/FT.png" alt="Filé de Tilápia">
+  <div class="caixa-texts">
+    <div class="caixa-title">Filé de Tilápia</div>
+    <p>Filé de tilápia empanado super crocante, arroz branco soltinho, farofa temperada e batata frita sequinha.</p>
+    <span class="caixa-preços">R$ 24,99</span>
+  </div>
+  </div>
+
+  <div id="modal-produto" class="modal-overlay">
+  <div class="modal-produto-card">
+    <span class="fechar-modal-prod">&times;</span>
+    
+    <div class="modal-produto-imagem">
+      <img src="img/PDD/FT.png" alt="Filé de Tilápia" id="modal-img">
+    </div>
+
+    <div class="modal-produto-info">
+      <h2 id="modal-titulo">Filé de Tilápia</h2>
+      <p id="modal-descricao">
+        Filé de tilápia empanado super crocante, arroz branco soltinho, farofa temperada e batata frita sequinha.
+      </p>
+      <div class="opcoes-tamanho">
+  <label>Tamanhos:</label>
+  <div class="botoes-tamanho">
+    <button type="button" class="btn-tamanho ativo" data-preco="24.99">P</button>
+    <button type="button" class="btn-tamanho" data-preco="27.00">M</button>
+    <button type="button" class="btn-tamanho" data-preco="32.00">G</button>
+  </div>
+</div>
+ <div class="controle-quantidade">
+  <div class="quant">Quantidade</div>
+    <button type="button" class="btn-qtd" id="btn-menos">-</button>
+    <span id="qtd-numero">1</span>
+    <button type="button" class="btn-qtd" id="btn-mais">+</button>
+  </div>
+      <div class="modal-produto-footer">
+        <span class="modal-preco" id="modal-preco">R$ 24,99</span>
+<button class="btn btn-add">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Costela Assada-->
+
+ <div class="caixa-produto" id="card-produto">
+    <img src="img/PDD/CA.png" alt="Costela Assada">
+  <div class="caixa-texts">
+    <div class="caixa-title">Costela Assada</div>
+    <p>Costela bovina assada desmanchando, arroz branco soltinho, feijão preto temperado, farofa crocante e salada fresca de alface com tomate.</p>
+    <span class="caixa-preços">R$ 28,00</span>
+  </div>
+  </div>
+
+  <div id="modal-produto" class="modal-overlay">
+  <div class="modal-produto-card">
+    <span class="fechar-modal-prod">&times;</span>
+    
+    <div class="modal-produto-imagem">
+      <img src="img/PDD/CA.png" alt="Costela Assada" id="modal-img">
+    </div>
+
+    <div class="modal-produto-info">
+      <h2 id="modal-titulo">Costela Assada</h2>
+      <p id="modal-descricao">
+        Costela bovina assada desmanchando, arroz branco soltinho, feijão preto temperado, farofa crocante e salada fresca de alface com tomate.
+      </p>
+      <div class="opcoes-tamanho">
+  <label>Tamanhos:</label>
+  <div class="botoes-tamanho">
+    <button type="button" class="btn-tamanho ativo" data-preco="28.00">P</button>
+    <button type="button" class="btn-tamanho" data-preco="35.00">M</button>
+    <button type="button" class="btn-tamanho" data-preco="45.00">G</button>
+  </div>
+</div>
+ <div class="controle-quantidade">
+  <div class="quant">Quantidade</div>
+    <button type="button" class="btn-qtd" id="btn-menos">-</button>
+    <span id="qtd-numero">1</span>
+    <button type="button" class="btn-qtd" id="btn-mais">+</button>
+  </div>
+      <div class="modal-produto-footer">
+        <span class="modal-preco" id="modal-preco">R$ 28,00</span>
+<button class="btn btn-add">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Cupim Assado-->
+
+ <div class="caixa-produto" id="card-produto">
+    <img src="img/PDD/CAS.png" alt="Cupim Assado">
+  <div class="caixa-texts">
+    <div class="caixa-title">Cupim Assado</div>
+    <p>Fatias de cupim assado com cheiro-verde, arroz branco soltinho, salada de maionese cremosa, batatas coradas e farofa temperada.</p>
+    <span class="caixa-preços">R$ 26,00</span>
+  </div>
+  </div>
+
+  <div id="modal-produto" class="modal-overlay">
+  <div class="modal-produto-card">
+    <span class="fechar-modal-prod">&times;</span>
+    
+    <div class="modal-produto-imagem">
+      <img src="img/PDD/CAS.png" alt="Cupim Assado" id="modal-img">
+    </div>
+
+    <div class="modal-produto-info">
+      <h2 id="modal-titulo">Cupim Assado</h2>
+      <p id="modal-descricao">
+        Fatias de cupim assado com cheiro-verde, arroz branco soltinho, salada de maionese cremosa, batatas coradas e farofa temperada.
+      </p>
+      <div class="opcoes-tamanho">
+  <label>Tamanhos:</label>
+  <div class="botoes-tamanho">
+    <button type="button" class="btn-tamanho ativo" data-preco="26.00">P</button>
+    <button type="button" class="btn-tamanho" data-preco="30.00">M</button>
+    <button type="button" class="btn-tamanho" data-preco="45.00">G</button>
+  </div>
+</div>
+ <div class="controle-quantidade">
+  <div class="quant">Quantidade</div>
+    <button type="button" class="btn-qtd" id="btn-menos">-</button>
+    <span id="qtd-numero">1</span>
+    <button type="button" class="btn-qtd" id="btn-mais">+</button>
+  </div>
+      <div class="modal-produto-footer">
+        <span class="modal-preco" id="modal-preco">R$ 26,00</span>
+<button class="btn btn-add">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Bebidas-->
+
+ <div class="caixa-produto" id="card-produto">
+    <img src="img/Bebidas/CC_L.png" alt="Coca-cola">
+  <div class="caixa-texts">
+    <div class="caixa-title">Coca-cola</div>
+    <p>Refrigerante em lata 300ml gelado, ideal para refrescar e acompanhar sua refeição.</p>
+    <span class="caixa-preços">R$ 4,00</span>
+  </div>
+  </div>
+
+  <div id="modal-produto" class="modal-overlay">
+  <div class="modal-produto-card">
+    <span class="fechar-modal-prod">&times;</span>
+    
+    <div class="modal-produto-imagem">
+      <img src="img/Bebidas/CC_L.png" alt="Coca-cola" id="modal-img">
+    </div>
+
+    <div class="modal-produto-info">
+      <h2 id="modal-titulo">Coca-cola</h2>
+      <p id="modal-descricao">
+        Refrigerante em lata 300ml gelado, ideal para refrescar e acompanhar sua refeição.
+      </p>
+      <div class="opcoes-tamanho">
+  <label>Tamanhos:</label>
+  <div class="botoes-tamanho">
+    <button type="button" class="btn-tamanho ativo" data-preco="4.00">300 ML</button>
+  </div>
+</div>
+ <div class="controle-quantidade">
+  <div class="quant">Quantidade</div>
+    <button type="button" class="btn-qtd" id="btn-menos">-</button>
+    <span id="qtd-numero">1</span>
+    <button type="button" class="btn-qtd" id="btn-mais">+</button>
+  </div>
+      <div class="modal-produto-footer">
+        <span class="modal-preco" id="modal-preco">R$ 4,00</span>
+<button class="btn btn-add">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <div class="caixa-produto" id="card-produto">
+    <img src="img/Bebidas/G_L.png" alt="Guarana">
+  <div class="caixa-texts">
+    <div class="caixa-title">Guarana</div>
+    <p>Refrigerante em lata 300ml gelado, ideal para refrescar e acompanhar sua refeição.</p>
+    <span class="caixa-preços">R$ 4,00</span>
+  </div>
+  </div>
+
+  <div id="modal-produto" class="modal-overlay">
+  <div class="modal-produto-card">
+    <span class="fechar-modal-prod">&times;</span>
+    
+    <div class="modal-produto-imagem">
+      <img src="img/Bebidas/G_L.png" alt="Guarana" id="modal-img">
+    </div>
+
+    <div class="modal-produto-info">
+      <h2 id="modal-titulo">Guarana</h2>
+      <p id="modal-descricao">
+        Refrigerante em lata 300ml gelado, ideal para refrescar e acompanhar sua refeição.
+      </p>
+      <div class="opcoes-tamanho">
+  <label>Tamanhos:</label>
+  <div class="botoes-tamanho">
+    <button type="button" class="btn-tamanho ativo" data-preco="4.00">300 ML</button>
+  </div>
+</div>
+ <div class="controle-quantidade">
+  <div class="quant">Quantidade</div>
+    <button type="button" class="btn-qtd" id="btn-menos">-</button>
+    <span id="qtd-numero">1</span>
+    <button type="button" class="btn-qtd" id="btn-mais">+</button>
+  </div>
+      <div class="modal-produto-footer">
+        <span class="modal-preco" id="modal-preco">R$ 4,00</span>
+<button class="btn btn-add">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <div class="caixa-produto" id="card-produto">
+    <img src="img/Bebidas/F_L.png" alt="Fanta">
+  <div class="caixa-texts">
+    <div class="caixa-title">Fanta</div>
+    <p>Refrigerante em lata 300ml gelado, ideal para refrescar e acompanhar sua refeição.</p>
+    <span class="caixa-preços">R$ 4,00</span>
+  </div>
+  </div>
+
+  <div id="modal-produto" class="modal-overlay">
+  <div class="modal-produto-card">
+    <span class="fechar-modal-prod">&times;</span>
+    
+    <div class="modal-produto-imagem">
+      <img src="img/Bebidas/F_L.png" alt="Fanta" id="modal-img">
+    </div>
+
+    <div class="modal-produto-info">
+      <h2 id="modal-titulo">Fanta</h2>
+      <p id="modal-descricao">
+        Refrigerante em lata 300ml gelado, ideal para refrescar e acompanhar sua refeição.
+      </p>
+      <div class="opcoes-tamanho">
+  <label>Tamanhos:</label>
+  <div class="botoes-tamanho">
+    <button type="button" class="btn-tamanho ativo" data-preco="4.00">300 ML</button>
+  </div>
+</div>
+ <div class="controle-quantidade">
+  <div class="quant">Quantidade</div>
+    <button type="button" class="btn-qtd" id="btn-menos">-</button>
+    <span id="qtd-numero">1</span>
+    <button type="button" class="btn-qtd" id="btn-mais">+</button>
+  </div>
+      <div class="modal-produto-footer">
+        <span class="modal-preco" id="modal-preco">R$ 4,00</span>
+<button class="btn btn-add">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="caixa-produto" id="card-produto">
+    <img src="img/Bebidas/P_L.png" alt="Pepsi">
+  <div class="caixa-texts">
+    <div class="caixa-title">Pepsi</div>
+    <p>Refrigerante em lata 300ml gelado, ideal para refrescar e acompanhar sua refeição.</p>
+    <span class="caixa-preços">R$ 4,00</span>
+  </div>
+  </div>
+
+  <div id="modal-produto" class="modal-overlay">
+  <div class="modal-produto-card">
+    <span class="fechar-modal-prod">&times;</span>
+    
+    <div class="modal-produto-imagem">
+      <img src="img/Bebidas/P_L.png" alt="Pepsi" id="modal-img">
+    </div>
+
+    <div class="modal-produto-info">
+      <h2 id="modal-titulo">Pepsi</h2>
+      <p id="modal-descricao">
+        Refrigerante em lata 300ml gelado, ideal para refrescar e acompanhar sua refeição.
+      </p>
+      <div class="opcoes-tamanho">
+  <label>Tamanhos:</label>
+  <div class="botoes-tamanho">
+    <button type="button" class="btn-tamanho ativo" data-preco="4.00">300 ML</button>
+  </div>
+</div>
+ <div class="controle-quantidade">
+  <div class="quant">Quantidade</div>
+    <button type="button" class="btn-qtd" id="btn-menos">-</button>
+    <span id="qtd-numero">1</span>
+    <button type="button" class="btn-qtd" id="btn-mais">+</button>
+  </div>
+      <div class="modal-produto-footer">
+        <span class="modal-preco" id="modal-preco">R$ 4,00</span>
+<button class="btn btn-add">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="caixa-produto" id="card-produto">
+    <img src="img/Bebidas/S_L.png" alt="Sprite">
+  <div class="caixa-texts">
+    <div class="caixa-title">Sprite</div>
+    <p>Refrigerante em lata 300ml gelado, ideal para refrescar e acompanhar sua refeição.</p>
+    <span class="caixa-preços">R$ 4,00</span>
+  </div>
+  </div>
+
+  <div id="modal-produto" class="modal-overlay">
+  <div class="modal-produto-card">
+    <span class="fechar-modal-prod">&times;</span>
+    
+    <div class="modal-produto-imagem">
+      <img src="img/Bebidas/S_L.png" alt="Sprite" id="modal-img">
+    </div>
+
+    <div class="modal-produto-info">
+      <h2 id="modal-titulo">Sprite</h2>
+      <p id="modal-descricao">
+        Refrigerante em lata 300ml gelado, ideal para refrescar e acompanhar sua refeição.
+      </p>
+      <div class="opcoes-tamanho">
+  <label>Tamanhos:</label>
+  <div class="botoes-tamanho">
+    <button type="button" class="btn-tamanho ativo" data-preco="4.00">300 ML</button>
+  </div>
+</div>
+ <div class="controle-quantidade">
+  <div class="quant">Quantidade</div>
+    <button type="button" class="btn-qtd" id="btn-menos">-</button>
+    <span id="qtd-numero">1</span>
+    <button type="button" class="btn-qtd" id="btn-mais">+</button>
+  </div>
+      <div class="modal-produto-footer">
+        <span class="modal-preco" id="modal-preco">R$ 4,00</span>
+<button class="btn btn-add">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="caixa-produto" id="card-produto">
+    <img src="img/Bebidas/CC_P.png" alt="Coca-cola">
+  <div class="caixa-texts">
+    <div class="caixa-title">Coca-cola</div>
+    <p>Refrigerante em garrafa PET 500ml gelado, na medida certa para refrescar e acompanhar sua refeição.</p>
+    <span class="caixa-preços">R$ 6,00</span>
+  </div>
+  </div>
+
+  <div id="modal-produto" class="modal-overlay">
+  <div class="modal-produto-card">
+    <span class="fechar-modal-prod">&times;</span>
+    
+    <div class="modal-produto-imagem">
+      <img src="img/Bebidas/CC_P.png" alt="Coca-cola" id="modal-img">
+    </div>
+
+    <div class="modal-produto-info">
+      <h2 id="modal-titulo">Coca-cola</h2>
+      <p id="modal-descricao">
+        Refrigerante em garrafa PET 500ml gelado, na medida certa para refrescar e acompanhar sua refeição.
+      </p>
+      <div class="opcoes-tamanho">
+  <label>Tamanhos:</label>
+  <div class="botoes-tamanho">
+    <button type="button" class="btn-tamanho ativo" data-preco="6.00">500 ML</button>
+  </div>
+</div>
+ <div class="controle-quantidade">
+  <div class="quant">Quantidade</div>
+    <button type="button" class="btn-qtd" id="btn-menos">-</button>
+    <span id="qtd-numero">1</span>
+    <button type="button" class="btn-qtd" id="btn-mais">+</button>
+  </div>
+      <div class="modal-produto-footer">
+        <span class="modal-preco" id="modal-preco">R$ 6,00</span>
+<button class="btn btn-add">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="caixa-produto" id="card-produto">
+    <img src="img/Bebidas/G_P.png" alt="Guarana">
+  <div class="caixa-texts">
+    <div class="caixa-title">Guarana</div>
+    <p>Refrigerante em garrafa PET 500ml gelado, na medida certa para refrescar e acompanhar sua refeição.</p>
+    <span class="caixa-preços">R$ 6,00</span>
+  </div>
+  </div>
+
+  <div id="modal-produto" class="modal-overlay">
+  <div class="modal-produto-card">
+    <span class="fechar-modal-prod">&times;</span>
+    
+    <div class="modal-produto-imagem">
+      <img src="img/Bebidas/G_P.png" alt="Guarana" id="modal-img">
+    </div>
+
+    <div class="modal-produto-info">
+      <h2 id="modal-titulo">Guarana</h2>
+      <p id="modal-descricao">
+        Refrigerante em garrafa PET 500ml gelado, na medida certa para refrescar e acompanhar sua refeição.
+      </p>
+      <div class="opcoes-tamanho">
+  <label>Tamanhos:</label>
+  <div class="botoes-tamanho">
+    <button type="button" class="btn-tamanho ativo" data-preco="6.00">500 ML</button>
+  </div>
+</div>
+ <div class="controle-quantidade">
+  <div class="quant">Quantidade</div>
+    <button type="button" class="btn-qtd" id="btn-menos">-</button>
+    <span id="qtd-numero">1</span>
+    <button type="button" class="btn-qtd" id="btn-mais">+</button>
+  </div>
+      <div class="modal-produto-footer">
+        <span class="modal-preco" id="modal-preco">R$ 6,00</span>
+<button class="btn btn-add">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="caixa-produto" id="card-produto">
+    <img src="img/Bebidas/F_P.png" alt="Fanta">
+  <div class="caixa-texts">
+    <div class="caixa-title">Fanta</div>
+    <p>Refrigerante em garrafa PET 500ml gelado, na medida certa para refrescar e acompanhar sua refeição.</p>
+    <span class="caixa-preços">R$ 6,00</span>
+  </div>
+  </div>
+
+  <div id="modal-produto" class="modal-overlay">
+  <div class="modal-produto-card">
+    <span class="fechar-modal-prod">&times;</span>
+    
+    <div class="modal-produto-imagem">
+      <img src="img/Bebidas/F_P.png" alt="Fanta" id="modal-img">
+    </div>
+
+    <div class="modal-produto-info">
+      <h2 id="modal-titulo">Fanta</h2>
+      <p id="modal-descricao">
+        Refrigerante em garrafa PET 500ml gelado, na medida certa para refrescar e acompanhar sua refeição.
+      </p>
+      <div class="opcoes-tamanho">
+  <label>Tamanhos:</label>
+  <div class="botoes-tamanho">
+    <button type="button" class="btn-tamanho ativo" data-preco="6.00">500 ML</button>
+  </div>
+</div>
+ <div class="controle-quantidade">
+  <div class="quant">Quantidade</div>
+    <button type="button" class="btn-qtd" id="btn-menos">-</button>
+    <span id="qtd-numero">1</span>
+    <button type="button" class="btn-qtd" id="btn-mais">+</button>
+  </div>
+      <div class="modal-produto-footer">
+        <span class="modal-preco" id="modal-preco">R$ 6,00</span>
+<button class="btn btn-add">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="caixa-produto" id="card-produto">
+    <img src="img/Bebidas/P_P.png" alt="Pepsi">
+  <div class="caixa-texts">
+    <div class="caixa-title">Pepsi</div>
+    <p>Refrigerante em garrafa PET 500ml gelado, na medida certa para refrescar e acompanhar sua refeição.</p>
+    <span class="caixa-preços">R$ 6,00</span>
+  </div>
+  </div>
+
+  <div id="modal-produto" class="modal-overlay">
+  <div class="modal-produto-card">
+    <span class="fechar-modal-prod">&times;</span>
+    
+    <div class="modal-produto-imagem">
+      <img src="img/Bebidas/P_P.png" alt="Pepsi" id="modal-img">
+    </div>
+
+    <div class="modal-produto-info">
+      <h2 id="modal-titulo">Pepsi</h2>
+      <p id="modal-descricao">
+        Refrigerante em garrafa PET 500ml gelado, na medida certa para refrescar e acompanhar sua refeição.
+      </p>
+      <div class="opcoes-tamanho">
+  <label>Tamanhos:</label>
+  <div class="botoes-tamanho">
+    <button type="button" class="btn-tamanho ativo" data-preco="6.00">500 ML</button>
+  </div>
+</div>
+ <div class="controle-quantidade">
+  <div class="quant">Quantidade</div>
+    <button type="button" class="btn-qtd" id="btn-menos">-</button>
+    <span id="qtd-numero">1</span>
+    <button type="button" class="btn-qtd" id="btn-mais">+</button>
+  </div>
+      <div class="modal-produto-footer">
+        <span class="modal-preco" id="modal-preco">R$ 6,00</span>
+<button class="btn btn-add">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="caixa-produto" id="card-produto">
+    <img src="img/Bebidas/S_P.png" alt="Sprite">
+  <div class="caixa-texts">
+    <div class="caixa-title">Sprite</div>
+    <p>Refrigerante em garrafa PET 500ml gelado, na medida certa para refrescar e acompanhar sua refeição.</p>
+    <span class="caixa-preços">R$ 6,00</span>
+  </div>
+  </div>
+
+  <div id="modal-produto" class="modal-overlay">
+  <div class="modal-produto-card">
+    <span class="fechar-modal-prod">&times;</span>
+    
+    <div class="modal-produto-imagem">
+      <img src="img/Bebidas/S_P.png" alt="Sprite" id="modal-img">
+    </div>
+
+    <div class="modal-produto-info">
+      <h2 id="modal-titulo">Sprite</h2>
+      <p id="modal-descricao">
+        Refrigerante em garrafa PET 500ml gelado, na medida certa para refrescar e acompanhar sua refeição.
+      </p>
+      <div class="opcoes-tamanho">
+  <label>Tamanhos:</label>
+  <div class="botoes-tamanho">
+    <button type="button" class="btn-tamanho ativo" data-preco="6.00">500 ML</button>
+  </div>
+</div>
+ <div class="controle-quantidade">
+  <div class="quant">Quantidade</div>
+    <button type="button" class="btn-qtd" id="btn-menos">-</button>
+    <span id="qtd-numero">1</span>
+    <button type="button" class="btn-qtd" id="btn-mais">+</button>
+  </div>
+      <div class="modal-produto-footer">
+        <span class="modal-preco" id="modal-preco">R$ 6,00</span>
+<button class="btn btn-add">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="caixa-produto" id="card-produto">
+    <img src="img/Bebidas/S_P.png" alt="Coca-cola">
+  <div class="caixa-texts">
+    <div class="caixa-title">Sprite</div>
+    <p>Refrigerante em garrafa 1 litro super gelado, ideal para compartilhar e acompanhar a refeição.</p>
+    <span class="caixa-preços">R$ 10,00</span>
+  </div>
+  </div>
+
+  <div id="modal-produto" class="modal-overlay">
+  <div class="modal-produto-card">
+    <span class="fechar-modal-prod">&times;</span>
+    
+    <div class="modal-produto-imagem">
+      <img src="img/Bebidas/S_P.png" alt="Sprite" id="modal-img">
+    </div>
+
+    <div class="modal-produto-info">
+      <h2 id="modal-titulo">Sprite</h2>
+      <p id="modal-descricao">
+        Refrigerante em garrafa 1 litro super gelado, ideal para compartilhar e acompanhar a refeição.
+      </p>
+      <div class="opcoes-tamanho">
+  <label>Tamanhos:</label>
+  <div class="botoes-tamanho">
+    <button type="button" class="btn-tamanho ativo" data-preco="10.00">500 ML</button>
+  </div>
+</div>
+ <div class="controle-quantidade">
+  <div class="quant">Quantidade</div>
+    <button type="button" class="btn-qtd" id="btn-menos">-</button>
+    <span id="qtd-numero">1</span>
+    <button type="button" class="btn-qtd" id="btn-mais">+</button>
+  </div>
+      <div class="modal-produto-footer">
+        <span class="modal-preco" id="modal-preco">R$ 10,00</span>
+<button class="btn btn-add">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+</section>
+
+
+<footer class="rodape">
+  <div class="rodape-container">
+    
+  
+    <div class="rodape-coluna">
+      <h3 class="rodape-logo">Marmitex da Jô</h3>
+      <p>O verdadeiro sabor da comida caseira, farta e quentinha na sua porta.</p>
+    </div>
+
+    <div class="rodape-coluna">
+      <h4>Contato & Pedidos</h4>
+      <p>WhatsApp: <a href="https://wa.me/553194802953" target="_blank" class="link-zap">(31) 9480-2953</a></p>
+      <p>Av. Afonso Pena, 1500 - Centro, Belo Horizonte - MG</p>
+      <p>Entregamos em toda a região</p>
+    </div>
+
+    <div class="rodape-coluna">
+      <h4>Horário de Atendimento</h4>
+      <p>Segunda a Sábado</p>
+      <p>10h30 às 15h00</p>
+    </div>
+
+  </div>
+
+  <div class="rodape-direitos">
+    <p>&copy; 2026 Marmitex da Jô. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

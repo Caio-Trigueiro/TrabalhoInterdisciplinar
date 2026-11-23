@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marmitex da Jô</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="img/Marmitex da Jô.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<script>
+    const slidesContainer = document.querySelector('.carrossel-slides');
+    const totalSlides = document.querySelectorAll('.slide').length;
+    const btnPrev = document.getElementById('btn-prev');
+    const btnNext = document.getElementById('btn-next');
+    
+    let slideAtual = 0;
+
+    function moverParaSlide(index) {
+      if (index < 0) {
+        slideAtual = totalSlides - 1;
+      } else if (index >= totalSlides) {
+        slideAtual = 0;
+      } else {
+        slideAtual = index;
+      }
+      slidesContainer.style.transform = `translateX(-${slideAtual * 100}%)`;
+    }
+
+    btnNext.addEventListener('click', () => {
+      moverParaSlide(slideAtual + 1);
+    });
+
+    btnPrev.addEventListener('click', () => {
+      moverParaSlide(slideAtual - 1);
+    });
+  </script>
+
+<body>
+     <header>
+        <ul>
+            <li><img src="img/Marmitex da Jô.png" alt=""></li>
+            
+            <li><div class="pesq">
+                <img src="img/lupa.png" alt="">
+                <input type="text" placeholder="Pesquisar...">
+                <button class="btn btn-list">
+                <select id="list" name="list">
+                    <option value="item1">Todos</option>
+                    <option value="item2">Bebidas</option>
+                    <option value="item3">Sobremesas</option>
+                  </select>
+                </button>
+            </div>
+            
+        </li>
+        <div class="buttons">
+            <button class="btn btn-carrinho"><img src="img/carrinho.png" alt=""><a href="carrinho.html">Carrinho</a></button>
+            <button class="btn btn-entrar"><a href="login.html">Entrar</a></button>
+            <button class="btn btn-log"><a href="login.html">Fazer Login</a></button>
+            </div>
+        </ul>
+</header>
+    <section class="começo">
+<div class="carrocel">
+    <div class="slide"><img src="img/slides_1/slide1.png" alt="Prato 1"></div>
+    <div class="slide"><img src="img/slides_1/slide2.png" alt="Prato 2"></div>
+    <div class="slide"><img src="img/slides_1/slide3.png" alt="Prato 3"></div>
+    <div class="slide"><img src="img/slides_1/slide4.png" alt="Prato 4"></div>
+    <div class="slide"><img src="img/slides_1/slide5.png" alt="Prato 5"></div>
+</div>
+<div class="slide-texte">
+<div class="title">
+<h1>Marmitex da Jô</h1>
+</div>
+<div class="caixa-texto"> <p> O Marmitax da Jô é um serviço de delivery focado em marmita caseira, prática e com gostinho de comida de vó. Com um cardápio variado para o dia a dia, o restaurante oferece refeições completas e bem servidas, preparadas com ingredientes selecionados para garantir rapidez na entrega e o máximo de sabor no almoço.</p>
+</div>
+</div>
+<button class="seta seta-esquerda" id="btn-prev">&#10094;</button>
+  <button class="seta seta-direita" id="btn-next">&#10095;</button>
+    </section>
+    <script src="script.js"></script>
+
+<section class="menu">
+  <ul>
+    <li><button><a href="#menus">Cardápio</a></button></li>
+    <li><button><a href="search.html">Faça um Pedido</a></button></li>
+    <li><button><a href="#racks">Avaliações</a></button></li>
+    <li><button><a href="#mari">Sobre a Jô</a></button></li>
+  </ul>
+</section>
+
+<section id="menus" class="card">
+  <div class="title-card">
+    <h1>Cardápio</h1>
+  </div>
+
+  <div class="esteira-container">
+    <div class="card-slids">
+  
+    <div class="esteira-item">
+  <img src="img/PDD/CC.png" alt="Combo Churrasco">
+  <span class="nome-produto">Combo Churrasco</span>
+</div>
+<div class="esteira-item">
+  <img src="img/PDD/MCF.png" alt="Marmitão Croca-Frango">
+  <span class="nome-produto">Marmitão Croca-Frango</span>
+</div>
+<div class="esteira-item">
+  <img src="img/PDD/CA.png" alt="Costela Assada">
+  <span class="nome-produto">Costela Assada</span>
+</div>
+<div class="esteira-item">
+  <img src="img/PDD/MA.png" alt="Macarronada">
+  <span class="nome-produto">Macarronada</span>
+</div>
+<div class="esteira-item">
+  <img src="img/PDD/LZ.png" alt="Lazanha">
+  <span class="nome-produto">Lazanha</span>
+</div>
+<div class="esteira-item">
+  <img src="img/PDD/SG.png" alt="Strogonoff">
+  <span class="nome-produto">Strogonoff</span>
+</div>
+<div class="esteira-item">
+  <img src="img/PDD/PF.png" alt="Prato Feito">
+  <span class="nome-produto">Prato Feito</span>
+</div>
+<div class="esteira-item">
+  <img src="img/PDD/GL.png" alt="Galinhada">
+  <span class="nome-produto">Galinhada</span>
+</div>
+<div class="esteira-item">
+  <img src="img/PDD/ES.png" alt="Escondidinho">
+  <span class="nome-produto">Escondidinho</span>
+</div>
+<div class="esteira-item">
+  <img src="img/PDD/FJ.png" alt="Feijoada">
+  <span class="nome-produto">Feijoada</span>
+</div>
+
+<div class="esteira-item">
+  <img src="img/PDD/CC.png" alt="Combo Churrasco">
+  <span class="nome-produto">Combo Churrasco</span>
+</div>
+<div class="esteira-item">
+  <img src="img/PDD/MCF.png" alt="Marmitão Croca-Frango">
+  <span class="nome-produto">Marmitão Croca-Frango</span>
+</div>
+<div class="esteira-item">
+  <img src="img/PDD/CA.png" alt="Costela Assada">
+  <span class="nome-produto">Costela Assada</span>
+</div>
+<div class="esteira-item">
+  <img src="img/PDD/MA.png" alt="Macarronada">
+  <span class="nome-produto">Macarronada</span>
+</div>
+<div class="esteira-item">
+  <img src="img/PDD/LZ.png" alt="Lazanha">
+  <span class="nome-produto">Lazanha</span>
+</div>
+<div class="esteira-item">
+  <img src="img/PDD/SG.png" alt="Strogonoff">
+  <span class="nome-produto">Strogonoff</span>
+</div>
+<div class="esteira-item">
+  <img src="img/PDD/PF.png" alt="Prato Feito">
+  <span class="nome-produto">Prato Feito</span>
+</div>
+<div class="esteira-item">
+  <img src="img/PDD/GL.png" alt="Galinhada">
+  <span class="nome-produto">Galinhada</span>
+</div>
+<div class="esteira-item">
+  <img src="img/PDD/ES.png" alt="Escondidinho">
+  <span class="nome-produto">Escondidinho</span>
+</div>
+<div class="esteira-item">
+  <img src="img/PDD/FJ.png" alt="Feijoada">
+  <span class="nome-produto">Feijoada</span>
+</div>
+
+    </div>
+  </div>
+
+  <div class="card-text">
+    <p>Comida caseira de verdade, farta e fresquinha! <br> Pratos preparados diariamente com o tempero único de vó e ingredientes selecionados. <br> Escolha a sua marmita favorita e receba quentinha onde estiver. <br> Entrega: 30 a 45 min | Atendimento: 10h30 às 15h</p>
+  </div>
+  
+</section>
+
+<section id="mari" class="jô">
+
+    <h1>Sobre a Jô</h1>
+    <div class="sobre">
+  <img src="img/jo.png" alt="">
+<p>Maria Joana da Anunciação Prazeres, conhecida como Dona Jô, é mãe solteira, <br>guerreira e a grande alma da pensão mais famosa do Méier. Há mais de 20 anos <br>fazendo marmitex de qualidade com aquele tempero caseiro inconfundível, ela <br> agora está expandindo seu negócio do Rio para Minas. Com carinho, técnica e <br> dedicação, a Jô promete unir a tradição carioca ao sabor mineiro autêntico em <br> seus novos pratos. Experimente nossos pratos saborosos e sinta o aconchego de <br>uma refeição feita como se fosse na casa da sua mãe!</p>
+</div>
+</section>
+
+<footer class="rodape">
+  <div class="rodape-container">
+    
+  
+    <div class="rodape-coluna">
+      <h3 class="rodape-logo">Marmitex da Jô</h3>
+      <p>O verdadeiro sabor da comida caseira, farta e quentinha na sua porta.</p>
+    </div>
+
+    <div class="rodape-coluna">
+      <h4>Contato & Pedidos</h4>
+      <p>WhatsApp: <a href="https://wa.me/553194802953" target="_blank" class="link-zap">(31) 9480-2953</a></p>
+      <p>Av. Afonso Pena, 1500 - Centro, Belo Horizonte - MG</p>
+      <p>Entregamos em toda a região</p>
+    </div>
+
+    <div class="rodape-coluna">
+      <h4>Horário de Atendimento</h4>
+      <p>Segunda a Sábado</p>
+      <p>10h30 às 15h00</p>
+    </div>
+
+  </div>
+
+  <div class="rodape-direitos">
+    <p>&copy; 2026 Marmitex da Jô. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
